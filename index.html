@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daş, kağız, qayçı Oyunu</h1>
+        <div id="game">
+            <div id="choices">
+                <button id="rock" onclick="choices('daş')">Daş</button>
+                <button id="paper" onclick="choices('kağız')">Kağız</button>
+                <button id="scissors" onclick="choices('qayçı')">Qayçı</button>
+            </div>
+            <div id="results">
+                <p id="result"></p>
+                <p id="timer">Zaman: <span id="time-left">15</span> saniyə</p>
+                <p id="score">User: <span id="user-score">0</span> - Computer: <span id="comp-score">0</span></p>
+            </div>
+            <button id="start-again-btn" onclick="startAgain()" style="display: none;">Start Again</button>
+            <button id="start" onclick="start()" style="display: block;">Start</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
